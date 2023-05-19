@@ -1,12 +1,13 @@
 "use client"
 import { Container } from "@mui/material"
+import Store from "../components/Store"
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
       <Container sx={{marginTop: "80px"}}>
-        <div>Home</div>
+        <Store />
       </Container>
     </>
   )
