@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
 import Link from "next/link";
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const drawerWidth = 240;
 const navItems = [
@@ -90,7 +90,7 @@ export default function DrawerAppBar(props: any) {
           <ButtonBase sx={{ marginLeft: 'auto', position: 'relative', padding: "4px" }}>
             <Link href="/cart">
               <Box>
-                <AddShoppingCartIcon />
+                <ShoppingCartIcon />
                 <Box
                   sx={{
 
