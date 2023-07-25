@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      <Container sx={{marginTop: "80px"}}>
+      <Container sx={{marginY: "80px"}}>
         <Store />
       </Container>
     </>

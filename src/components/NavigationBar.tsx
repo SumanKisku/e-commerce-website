@@ -17,6 +17,7 @@ import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
 import Link from "next/link";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import { useCart } from "@/contexts/CartContext";
 
 const drawerWidth = 240;
 const navItems = [
@@ -28,6 +29,8 @@ const navItems = [
 export default function DrawerAppBar(props: any) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  // const {cart, dispatch} = useCart();
+  // dispatch({type: "addToCart"})
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -96,7 +99,7 @@ export default function DrawerAppBar(props: any) {
 
                     height: '15px',
                     width: '15px',
-                    border: '2px solid white',
+                    padding: '2px',
                     position: 'absolute',
                     bottom: '0',
                     right: '0',
@@ -108,7 +111,7 @@ export default function DrawerAppBar(props: any) {
                     borderRadius: '50%',
                     fontWeight: 'bold',
                   }}>
-                  8
+                  {/*cart.length*/}
                 </Box>
               </Box>
             </Link>

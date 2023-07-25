@@ -4,9 +4,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <Container sx={{ marginTop: "80px" }}>
-            <div>About</div>
-        </Container>
+       <div>aboutpage</div>
     )
 }
 
